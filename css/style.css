@@ -51,3 +51,37 @@ figcaption {
 #details a:active{
   color:red;
 }
+
+/* ////LAYOUT////*/ 
+
+.wrapper {
+  width: 960px; 
+  margin: 0 auto;
+  background: #eee;
+}
+
+.col-1 {
+  float: left;
+  width: 32%;
+  background: #ccc;
+}
+
+.col-2 { 
+  float: left;
+  width: 66%;
+  background: #ccc;
+}
+
+.col-3 {
+  /*This is a block level element, so no need for width*/
+  background:#ccc;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+/*This code allows us to add a margin to all classes with col- in the name. It is a shortcut. There is a warning that it may be slow, so decide if you want to use it or not*/
+}
+
+.first {
+  margin-left: 0%;
+}
